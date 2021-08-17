@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 float f_to_c(float f) {
   return ((f - 32) * 5) / 9; //Fahrenheit to Centigrade.
@@ -101,6 +102,36 @@ void fahrenheitCentigradeConversion(void) {
 
 
 void selfServiceCheckout(void) {
-	std::cout << " - selfServiceCheckout: not yet implemented\n\n";
+  std::string temp_input = "";
+  int quantity = 1;
+  int item_number = 1;
+  float item_cost = 0.0;
+  float sub_total = 0.0;
+  float total = 0.0;
+  float shopping_tax = 5.5;
+
+  while(quantity !=0){
+    std::cout  << "Please enter a quantity for item: " << item_number << " (or 0 to finish): ";
+    std::cin >> temp_input;
+    quantity = stoi(temp_input);
+
+    if (quantity != 0) {
+      std::cout << "Please enter item number " << item_number << "'s cost: ";
+      std::cin >> temp_input;
+      item_cost = stof(temp_input);
+      
+      sub_total += (quantity * item_cost);
+      item_number++;
+    }
+  }
+
+  sub_total  = roundf(sub_total * 100) / 100;
+  shopping_tax = roundf(sub_total * (shopping_tax / 100));
+  total     = roundf((sub_total + shopping_tax) * 100) / 100;
+
+  std::cout << "Thank you.\n\n";
+  std::cout << "Subtotal: £" << sub_total << "\n";
+  std::cout << "Shopping Tax: £" << shopping_tax << "\n\n";
+  std::cout << "Total: £" << total << "\n\n";
 }
 
