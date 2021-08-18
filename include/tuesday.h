@@ -72,6 +72,52 @@ void passwordComplexityChecker(void) {
   std::cout << "The password '" << password << "' is " << result;
 }
 
-void employeeListRemoval(void) {
-	std::cout << " - employeeListRemoval: not yet implemented\n\n";
+
+//Employee list
+
+
+//function to output the array
+void outputEmployees(std::vector<std::string> employees){
+  int len = employees.size();
+  std::cout << "\nThere are " << len << " employees:\n";
+  for (auto employee : employees) {
+    std::cout << employee << "\n";
+  }
+}
+
+//find employee in list
+int find_employee(std::vector<std::string> emp, std::string name){
+  auto it = std::find(emp.cbegin(), emp.cend(), name);
+  if(it != emp.cend()){
+    int index = std::distance(emp.cbegin(),it);
+    return index;
+  }else{
+    //if not found
+    return -1;
+  }
+}
+
+void employeeListRemoval(void){
+  std::string name_to_del = "";
+  int employee_pos = 0;
+
+  std::vector<std::string> employees = {"John Smith","Jaelynn Stuart","Kaley Barajas","Walter Collier","Cale Myers"};
+
+  outputEmployees(employees);
+
+  std::cout << "\n Please enter an employee name to delete: ";
+  std::getline(std::cin,name_to_del);
+
+  if (find_employee(employees,name_to_del) == -1){
+    std::cout << "\n Employee not found";
+  }else{
+    for(int i = 0; i < employees.size(); i++){
+      if(employees[i] == name_to_del){
+        employees.erase(employees.cbegin()+i);
+        std::cout << "\n Employee, "<< name_to_del << ", Removed from list. \n";
+      }
+    }
+  }
+  
+  outputEmployees(employees);
 }
