@@ -131,6 +131,32 @@ void carClass(void) {
 }
 
 
+class AreaOf {
+  
+  public:
+  AreaOf(){
+    std::cout << "\n Object Created";
+  }
+
+  //Area of a Square
+  float size(float a) {return a * a;}  
+
+  //Area of a Rectangle
+  float size(float w, float l) {return w * l;}
+
+  //Area of a Trapezoid
+  float size(float b,float h, float a){return (((a+b)/2)*h);}
+
+  ~AreaOf(){
+    std::cout << "\nObject Destroyed";
+  }
+
+};
+
+
 void areaOf(void) {
-		std::cout << " - areaOf: not yet implemented\n\n";
+  AreaOf area;
+  std::cout<<"\n\nArea of Circle (r = 4.5): "<<area.size(4.5)<<std::endl;
+  std::cout<<"\nArea of Rectangle (w = 4,l = 5.9): "<<area.size(4,5.9)<<std::endl;
+  std::cout<<"\nAera of Trapezoid (a = 14,b = 7.5,h = 6): "<<area.size(14,7.5,6)<<std::endl;
 }
