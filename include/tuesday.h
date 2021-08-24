@@ -1,3 +1,4 @@
+
 int strength_check(std::string password) {
 
   int alpha_chars = 0;
@@ -34,11 +35,10 @@ int strength_check(std::string password) {
       }
     }
   }
-  //len == 0? return 0 - used for switch case err message
   else{
     return 0;
   }
-  return 0;
+  return 1;
 }
 
 void passwordComplexityChecker(void) {
@@ -48,7 +48,7 @@ void passwordComplexityChecker(void) {
   std::cout << "Password: ";
   std::cin >> password;
   
-  //Output result depending on case
+
   switch (strength_check(password)) {
     case 0:
       std::cout << "Error - No input given.";
@@ -68,7 +68,6 @@ void passwordComplexityChecker(void) {
     default:
       std::cout << "Yikes";
   }
-  //output
   std::cout << "The password '" << password << "' is " << result;
 }
 
