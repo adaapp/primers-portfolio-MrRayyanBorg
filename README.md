@@ -75,9 +75,17 @@ Lastly a simple `if-else` statement whereby if the records are found - Output th
 It was fairly difficult to try and learn how to interact with external files using C plus plus that was definitely a benefiting experience as I have become more confident with using the syntax.
 
 ### Primer 6 - Data File Parser
+Primer 6 was a datafile paser and it required us to create a program which reads data from a file in a format by which was evenly spaced and included headers such as *initial, lastname* and *salary*.
 
+#### Problem Breakdown
+In order to complete this task I worked in steps: 
+* I read in the file object being the external data. 
+* Separated each instance by `','` allowing me to separate the first name last name and salary.
+* I then extracted the initial from the first name being just the first letter (index 0) and also push back the last name and salary which was needed for the final output.
+* Created the headings *initial, last* and *salary*, leaving me with the final problem just being the spacing between each of the Rows being outputted.
 
 #### Reflection (as well as issues, challenges & resolutions)
+There are many ways I could have full matted the rose so that the spacing was even the way I chose was to make the spacing the same size as the longest last name this meant that the salary would stopped a set index All-Star the first letter of the last name meaning that the spacing would be identical across all of the Rows.  Looking Back there may have been a way I could have Thomas more efficiently I was using the last name is dependent upon the data and having a very long last name could result in large spaces or gaps within the final output which is not ideal!
 
 ### Primer 7 - Self-service Checkout
 
