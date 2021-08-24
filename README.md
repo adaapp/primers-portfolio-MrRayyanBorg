@@ -85,32 +85,48 @@ In order to complete this task I worked in steps:
 * Created the headings *initial, last* and *salary*, leaving me with the final problem just being the spacing between each of the Rows being outputted.
 
 #### Reflection (as well as issues, challenges & resolutions)
-There are many ways I could have full matted the rose so that the spacing was even the way I chose was to make the spacing the same size as the longest last name this meant that the salary would stopped a set index All-Star the first letter of the last name meaning that the spacing would be identical across all of the Rows.  Looking Back there may have been a way I could have Thomas more efficiently I was using the last name is dependent upon the data and having a very long last name could result in large spaces or gaps within the final output which is not ideal!
+There are many ways I could have formatted the rows so that the spacing was even. The method I chose was to make the spacing the same size as the longest last name, this meant that the salary would start at a set index for every row outputted. Looking back there may have been a way I could have done this more efficiently as I was using the last name, which is dependent upon the data and having a very long last name could result in large spaces or gaps within the final output - not ideal!
 
-### Primer 7 - Self-service Checkout
+### Primer 7 - Sleep Timer
 
+Primus 7 was a very simple program blocking for the execution based on the value inputted in seconds.  This fuction was very useful in the sense that it would be used with other functions as a countdown or timer.
+
+As the subroutine I was using calculated the time using `milliseconds`, I had to ensure that in order for the user to input seconds, a calculation was made to multiply the seconds by `1000` and then inputting those milli-seconds into the subroutine being used, `*i.e.* chrono::milliseconds()`
+
+### Primer 8 - Joining/Detaching Threads
+Primer challenge 8 encompasses a joining and detaching of threads. This means that I would have two separate functions timer1 and timer2 for each thread. As well as having different durations, i.e. `5` and `10 seconds`. The goal is to start both threads simultaneously, return the thread starting and then ending after its assigned duration of seconds is complete. All of which being outputted to the user.
+
+I approached this by having two threads and assigning each thread to a unique timer1 and timer2, the first thread starts and ends after timer1 finishes its countdown (`5 Seconds`) the second thread with starts and ends after the timer2 duration of 10 seconds. Pipelining both threads would cause a them to take 15 seconds as the durations would be combined and this is shown to the user. I have commented a section within primer 8 explaining why the output is different to that of the previous output for both part A and Part B.
+
+### Primer 9 - Car Object
+Primary challenges 9 represents a call class structures in a way that represents internal properties and public methods these are listed below:
+* void set_colour(string) – used to set the car’s colour, e.g., Blue, White, etc.
+* string get_colour(void) – returns the car’s colour
+* void set_make(string) – used to set the car’s make, e.g., Toyota, Honda, Ford, Kia, etc,
+* string get_make(void) – returns the car’s make
+* void engine_on(void) – used to turn the car’s engine on
+* void engine_off(void) – used to turn the car’s engine off
+* void locked(bool) – locks / unlocks the car.
+* void status(void) – displays the car’s current status (see example output below)
+
+The purpose of the program is to display the current cost status as well as a menu allowing user interaction with the car for example a user should be able to turn the engine on and off as well as `Lock` and `Unlock` the car.
 
 #### Reflection (as well as issues, challenges & resolutions)
+When first designing my solution, I wanted to premise that I was going to use the switch-case method, to take an options from the user as cases and return calls to functions, such as `engine_on()` - to turn the engine on. This seemed like the most efficient way of working as I would have separate functions for each of the features of user interaction. As well as cases to call upon each of these functions I had created. 
 
-### Primer 8 - Self-service Checkout
+The switch case would also default to 'that import was invalid'  to ensure that a user would input a valid option.
 
+### Primer 10 - Area of Shapes (Square, Rectangle, Trapezoid)
+Primer challenge 10 was to design an area of claws which provides a single method size which can be differentiated correctly and calculate 3 out of 5 shape types from a list:
 
-#### Reflection (as well as issues, challenges & resolutions)
-
-### Primer 9 - Self-service Checkout
-
-
-#### Reflection (as well as issues, challenges & resolutions)
-
-### Primer 10 - Self-service Checkout
-
-
-#### Reflection (as well as issues, challenges & resolutions)
-
-### Primer N - Self-service Checkout
-
+* Area of Circle (r)
+* Area of Square (a)
+* Area of Rectangle (w, l)
+* Area of Triangle (b, h)
+* Area of Trapezoid (b, h, a)
 
 #### Reflection (as well as issues, challenges & resolutions)
+The shaped types I included within my code were, `square`, `rectangle`, and `trapezoid`. I chose these since I could differentiate them by the amount of arguments they each hold being 1, 2, and 3. From there, I had to code in the formula to calculate the area of each of these shapes whilst also ensuring that these were pure functions.
 
 ---
 ## Section 2 - Programming Paradigms
