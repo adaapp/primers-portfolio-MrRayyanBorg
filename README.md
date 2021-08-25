@@ -131,7 +131,40 @@ The shaped types I included within my code were, `square`, `rectangle`, and `tra
 ---
 ## Section 2 - Programming Paradigms
 ### Programming Paradigms
-Simply put, a programming paradigm, for example, procedural, object-oriented, functional, structured, declarative, imperative and event driven can be described as a specific approach used when trying to solve a problem.  Although many programming languages can (and do) support multiple paradigms this discussion will focus more specifically on the possible benefits with examples of the potential differences and similarities of five from the above list. These are ...
+Simply put, a programming paradigm, for example, procedural, object-oriented, functional, structured, declarative, imperative and event driven can be described as a specific approach used when trying to solve a problem.  Although many programming languages can (and do) support multiple paradigms this discussion will focus more specifically on the possible benefits with examples of the potential differences and similarities of five from the above list.
+
+#### Imperative & Structured Programming
+In regards to Imperative Programming, the flow control on this programming paradigm is explicit meaning that stated clearly and in detail as well as commands being indicative of how each step of the algorithm functions.
+![image](https://user-images.githubusercontent.com/42804334/130773526-85ac1f35-4161-452d-851a-0dcb204f4a33.png)
+
+Structured programming is a variant of imperatiuve programming, however the control flow is expressed byh nested loops, conditionals, and subroutines. Variables also have a lexical scope, meaning they are generally called from the same code-block they were defined at.
+![image](https://user-images.githubusercontent.com/42804334/130773925-82d25d06-7d82-4e74-b674-c0168735c050.png)
+
+#### Declarative Programming
+Within this paradigm, the control flow is implicit, meaning it is only stated what the result shouild look like, and not the detail within the function of how to carry the process out.
+For example:
+![image](https://user-images.githubusercontent.com/42804334/130775542-8583f1e1-fceb-438b-b430-26441aae0414.png)
+Within this example, the coder is declaring the processes they want to perform (purple statements), however, doing so, they do not program the function in itself. There is also no use of loops or assingmnets to variables.
+
+#### Event-Driven Programming
+The even-driven paradigm works bywhich the flow of the program is defined by events such as user interactions with the program, i.e. `MouseClick`, or `KeyPress`. This paradigm is heavily using within GUIs and other user-centric applications.
+
+Event-Driven programs are generally broken down by which there is an event listener, waiting for a user input to engage with the program. Once an event occurs, there is a call back function which triggers. The call back function depends entirely on the event at hand.
+![image](https://user-images.githubusercontent.com/42804334/130776682-67a0f2c9-e0a7-45f4-8dce-97156b2f1f5f.png)
+
+#### Object-oriented Programming (OOP)
+Object-oriented programming is a paradigm based on the concept of '*Objects*'. These objects contain data in the form of fields, as well as, code in the form of procedures. These objects allow features such as possessing properties that allow users to interact with them, or accessed to modify data fields with the object itself.
+
+Languages like C++, are called OO languages, however they really just take some elements of OOP, as well as imperative code and merge the two. For example, below we can see the use of `.length` and `toUpper()` methods, rather than using top-level functions. However the `for` and `if` statements are back to being control structures.
+![image](https://user-images.githubusercontent.com/42804334/130775333-fc5bac62-f6a0-46bf-b0ed-33ecdb82bf43.png)
+
+#### Functional Programming
+This is a programming paradigm whereby programs are constructed by the composition and application of functions. A programmer would create simple functions, as well as more intricate functions (sometimes composed of various simple functions), which are all used in conjunction to produce a result.
+
+Within the functional programming paradigm there are both pure and impure functons, both have different characteristics:
+A pure function, is a function which always returns the same result, given the same inputs. These functions have no side effects. For example `multiply(a,b)`.
+On the other hand, an impure function will return different values, given the same inputs, i.e. `Random(min, max)`. As the function cannot be replaced with a value, it is deemed as impure.
+
 
 ---
 ## Section 3 - Continued Professional Development
