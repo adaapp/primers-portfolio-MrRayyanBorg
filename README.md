@@ -171,10 +171,26 @@ Within the functional programming paradigm there are both pure and impure functo
 A pure function, is a function which always returns the same result, given the same inputs. These functions have no side effects. For example `multiply(a,b)`.
 On the other hand, an impure function will return different values, given the same inputs, i.e. `Random(min, max)`. As the function cannot be replaced with a value, it is deemed as impure.
 
-
 ---
 ## Section 3 - Continued Professional Development
-### Benefits of becoming a Polyglot Programmer
-Vestibulum vitae semper sem. Duis leo leo, suscipit at felis non, pellentesque varius massa. Sed sit amet orci nibh. Morbi scelerisque faucibus elit, vitae mollis turpis finibus eget. In convallis euismod nunc non imperdiet. Duis ultricies pulvinar lorem, sed molestie nunc porta at. Aenean arcu ante, efficitur nec felis sed, feugiat iaculis turpis. Vestibulum eu elementum diam. Quisque nec tortor auctor, scelerisque ante vitae, fringilla tellus.
+For this section I will be covering the professional development involved with handling complex projects such as, being a polyglot programmer, layers of abstraction,as well as using high/low level languages.
 
-Quisque ligula lectus, efficitur quis malesuada sit amet, malesuada sed nibh. In lorem erat, elementum quis tempus nec, rhoncus ac ante. Mauris suscipit massa tempor, pulvinar neque vel, gravida nulla. Donec massa diam, molestie in diam nec, vulputate faucibus ligula. Aliquam erat volutpat. Aliquam sit amet dui ligula. Nullam euismod eros ultrices magna convallis lobortis. Proin convallis placerat tincidunt. Quisque interdum, nisi id egestas luctus, augue libero lacinia urna, sit amet tempus nisl sem nec quam. Vestibulum interdum urna mauris, vel dignissim nisi dignissim egestas. Donec volutpat dictum dui, at egestas sem tristique nec.
+### Becoming a Polyglot Programmer
+Becoming a polyglot programmer is a strong topic for any developer and refers to becoming fluent with a variety of programming languages.
+
+In my case, I am fluent in both Python, and Javascript, with some knowledge in SQL and newly C++. There are many benefits to becoming proficient with this many languages, both internal and external.
+I refer to internal as, skills as a developer, I believe learning to work within different environments will increase a developers dexterity when faced with problems and issues, a polyglot is also more adaptable since they have been exposed to a number of languages, as well as frameworks, and rapidly changing tools.
+External benefits refer to the indirect benefits outside of being a developer. One of these benefits are increased employability, as being proficient in many languages would reflect greatly on an employee's resume. Another external benefit would be a sense of self-fulfilment with regards to having wide-spread knowledge across various languages.
+
+### High/Low Level languages
+Relating to becoming polyglot, a programmer should ensure their toolbox includes both high level and low level languages.
+A high-level language is close to a natural language in its syntax, for example Python uses statments like `print`, `if`, `input`, and `while`, most of these are intuitive for the average person, making the syntax and use of the programming more readable since its terminology is abbreviated from english language.
+On the other hand, a low-level language is less abbreviated from natural languages, and is closer to machine-code (code understood by the computer directly). an example of a low-level language is C++, hence why its syntax is hard to learn and it was the chosen language for this advanced module.
+
+### Layers of Abstraction
+Abstraction refers to ignoring the more complex parts of a problem, whilst prioritising the key elements of the solution.
+A great example of layers of abstraction is the OSI model:
+
+![image](https://user-images.githubusercontent.com/42804334/130828373-957cc840-aa10-4f29-8037-5ff4035b6e4d.png)
+
+The OSI model breaks down the case of sending data over a network, from a sender to reciever. As you can see it breaks down the complex problem into a simpler solution following 7 steps, `Application`, `Presentation`, `Session`, `Transport`, `Network`, `Data Link`, `Physical`.
